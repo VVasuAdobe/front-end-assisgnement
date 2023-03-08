@@ -1,0 +1,29 @@
+:root{ 
+    --blue: #2644d9; 
+    --white:#ffffff;
+    --grey:#585858;
+    --theme:#922eef;
+    }
+
+.callToAction > h3{
+    font-size: 40px;
+    text-align: center;
+    padding: 10px 0;
+    color:var(--theme);
+
+}
+.callToAction > a{
+    margin: auto;
+    display: block;
+    height: 50px;
+    width: 130px;
+    background:var(--theme);
+    color: var(--white);
+    text-align: center;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 54px;
+    border-radius: 20px;
+    text-decoration: none;
+
+}

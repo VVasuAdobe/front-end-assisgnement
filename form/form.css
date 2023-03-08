@@ -1,0 +1,105 @@
+:root{ 
+    --blue: #2644d9; 
+    --white:#ffffff;
+    --grey:#ccc;
+    --theme:#922eef;
+    --red:#ff0000;
+    --green:#008000;
+    --black:#000000;
+    
+    }
+
+
+.formSection{
+      background-color: var(--red); 
+      display:grid;
+      margin-top: 60px;
+        
+    }
+
+ /*.formSection fieldset{
+    display: grid;
+    width: min-content;
+    padding: 21px;
+    grid-template-rows: 200px 500px;
+    grid-template-columns: 200px 200px;
+    justify-content: center;
+}
+ */
+
+ .formSection >div{
+    color: var(--white);
+    padding: 0px 30px 30px 30px;
+ }
+
+  .formSection >div >p{
+    margin: -20px 0 0 17px;
+ }
+
+ form{
+    padding: 15px;
+    background-color: var(--white);
+    grid-row: 1/2;
+    margin: 10px 20px;
+    box-shadow:  0px 0px 5px var(--black), 0px 0px 15px var(--black);
+    position: relative;
+    top: -35px;
+ }
+
+ form > div{
+    display: grid;
+    grid-template-columns: 115px auto;
+    gap: 10px;
+    margin-bottom: 30px;
+ }
+
+ form > input[type=submit]{
+    display: block;
+    margin: auto;
+    background-color:var(--grey);
+    border: none;
+    color: var(--black);
+    padding: 8px 19px;
+    font-size: 14px;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+ }
+
+ input[type=text], input[type=email], textarea{
+    width: 100%;
+    padding: 0px 10px;
+    margin: -10px 0;
+    border: 1px solid var(--grey);
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+
+   
+  /* Large devices (laptops/desktops, 992px and up) */
+  @media only screen and (min-width: 992px) {
+
+    .formSection {
+        
+        grid-template-columns: auto 550px;
+        margin-top: 60px;
+    }
+
+    form{
+        grid-column: 2/3;
+        margin: 0 50px 0 0;
+        position: relative;
+        top: -35px;
+     }
+
+     .formSection >div {
+        padding: 25px 30px 30px 200px;
+    }
+
+    form > input[type=submit] {
+        padding: 8px 19px;
+        font-size: 14px;
+        padding: 15px 32px;
+        font-size: 16px;
+    }
+  }

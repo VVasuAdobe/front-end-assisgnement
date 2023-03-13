@@ -12,6 +12,7 @@
 --base:#e3e1e1;
 --white:#ffffff;
 --black:#000000;
+--lightGrey:#d8d8d8;
 
 }
 
@@ -27,8 +28,8 @@
     display: inline-block;
     margin: 7px;
     width: 300px;
-    background-color: var(--base);
-    border: 1px solid var(--black);
+   /* background-color: var(--base); */
+    box-shadow: 1px 1px 2px var(--lightGrey), 0 0 25px var(--lightGrey), 0 0 5px var(--lightGrey);
     border-radius: 2px;
 }
 
@@ -61,13 +62,14 @@
 .cardSection__card h5{
     box-sizing: border-box;
     padding-left: 4px;
-    font-size: 15px;
+    font-size: 17px;
+    margin-bottom: -10px;
     text-align: center;
     color:var(--red);
 }
 
 .cardSection__card h5+p{
-    font-size: 12px;
+    font-size: 15px;
     padding: 7px 20px;
     text-align: justify;
 }

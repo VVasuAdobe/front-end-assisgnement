@@ -15,14 +15,13 @@
 .callToAction > a{
     margin: auto;
     display: block;
-    height: 50px;
-    width: 130px;
+    max-width: 110px;
+    padding:10px 15px;
     background:var(--theme);
     color: var(--white);
     text-align: center;
     font-weight: bold;
     font-size: 20px;
-    line-height: 54px;
     border-radius: 20px;
     text-decoration: none;
 
